@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students list</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style_css.css" >
+<body>
+    <div class="master">
+        <div class="container py-4">
+            <div class="mx-auto" style="width: 500px; text-align: center">
+                <h1>List of Students</h1>
+            </div>
+                <table class="table table-bordered table-hover table-color" >
+                    <thead>
+                        <tr>
+                            <th scope="col" class="show-grid-dark"> Name </th>
+                            <th scope="col" class="show-grid-dark">Surname</th>
+                            <th scope="col" class="show-grid-dark">Department</th>
+                            <th scope="col" class="show-grid-dark">ID number</th>
+                            <th scope="col" class="show-grid-dark">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="listOfStudents"></tbody>
+                </table>
+        </div>
+    </div>
+    <div class="details">
+        <div class="container py-4">
+            <div class="mx-auto detail-header" style="width: 500px;">
+            </div>
+            <div class="container ">
+                <table class="table table-bordered table-hover table-color">
+
+                    <thead>
+                        <tr>
+                    <th scope="col" class="show-grid-dark">
+                        Course name
+                    </th>
+                    <th scope="col" class="show-grid-dark">
+                        First exam
+                    </th>
+                    <th scope="col" class="show-grid-dark">
+                        Final exam
+                    </th>
+                    <th scope="col" class="show-grid-dark">
+                        Average
+                    </th>
+                    <th scope="col" class="show-grid-dark">
+                        Letter grade
+                    </th>
+                        </tr>
+                    </thead>
+                    <tbody class="listOfClasses"></tbody>
+                </table>
+            <button type="button" class="btn color-shape my-3 show-master" onclick="showMaster()">Main page</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
